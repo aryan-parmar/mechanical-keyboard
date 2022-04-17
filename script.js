@@ -1,16 +1,19 @@
+var audio = new Audio();
+var audio1 = new Audio();
+audio.loop = false;
+audio1.loop = false;
 $(window).on({
   'keydown': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.addClass('pressed');
-    var audio = new Audio('/mechanical-keyboard/start.mp3');
-    audio.loop = false;
+    audio.src = '/mechanical-keyboard/start2.mp3'
     audio.play();
   },
   'keyup': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.removeClass('pressed');
-    var audio = new Audio('/mechanical-keyboard/end.mp3');
-    audio.play();
+    audio1.src = '/mechanical-keyboard/end2.mp3';
+    audio1.play();
   }
 });
 var leftColor = document.querySelector("#leftColor");
