@@ -2,14 +2,14 @@ $(window).on({
   'keydown': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.addClass('pressed');
-    var audio = new Audio('/start.mp3');
+    var audio = new Audio('/mechanical-keyboard/start.mp3');
     audio.loop = false;
     audio.play();
   },
   'keyup': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.removeClass('pressed');
-    var audio = new Audio('/end.mp3');
+    var audio = new Audio('/mechanical-keyboard/end.mp3');
     audio.play();
   }
 });
