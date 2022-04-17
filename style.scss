@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Average+Sans);
+#update {
+  margin-top: 60px;
+  text-align: center;
+}
+body {
+  width: 890px;
+  margin: 0 auto;
+  padding: 100px 30px 30px;
+  font-family: "Average Sans", sans-serif;
+  color: #555;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  background: #424242;
+}
+
+#keyboard {
+  padding: 40px 8px ;
+  background: #1d1c1b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotateX(15deg);
+}
+
+#main {
+  padding: 2px;
+  background-image: -webkit-linear-gradient(left, red,yellow,green, blue);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#addition_wrap {
+  width: 650px;
+  margin: -2px 0 0 85px;
+  padding: 0 2px 2px;
+  background-image: -webkit-linear-gradient(left, red,yellow,green, blue);
+  border-radius: 0 0 4px 4px;
+  position: relative;
+}
+
+#addition {
+  overflow: hidden;
+}
+
+.key, .f_key {
+  width: 40px;
+  height: 45px;
+  margin: 2px;
+  border-width: 3px 7px 10px;
+  border-style: solid;
+  border-radius: 4px;
+  float: left;
+}
+.key.pressed, .f_key.pressed {
+  -webkit-transform: scale(0.95, 0.95);
+  -moz-transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  -o-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+}
+
+.key {
+  background: #242221;
+  border-color: #181717 #131212 #201f1f;
+}
+
+.f_key {
+    background: #242221;
+    border-color: #2c2a28 #1d1b1a #2e2a2a;
+}
+
+.key .keycap {
+  width: 33px;
+  height: 40px;
+  padding: 5px 0 0 7px;
+  font-size: 18px;
+  line-height: 1;
+  background: #252424;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: relative;
+  color: white;
+}
+
+.f_key .keycap {
+    color: white;
+  width: inherit;
+  height: inherit;
+  font-size: 15px;
+  line-height: 45px;
+  text-indent: 7px;
+  background: #252424;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: relative;
+}
+
+.top {
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  line-height: 1;
+  display: block;
+}
+
+.bottom {
+  width: inherit;
+  line-height: 20px;
+  display: block;
+}
+
+.side {
+  font-size: 10px;
+  line-height: 1;
+  display: block;
+  position: absolute;
+  left: 4px;
+  bottom: -10px;
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
+  transform: rotateX(50deg);
+}
+
+.f_key .side {
+  left: -3px;
+}
+
+.k13 .side {
+  right: 7px;
+  text-align: right;
+}
+
+/*------- key width ------- */
+.k27, .k18.left {
+  width: 38px;
+  border-right-width: 9px;
+}
+
+.k192, .fn, .k18.right {
+  width: 38px;
+  border-left-width: 9px;
+}
+
+.k192 .keycap {
+  width: 30px;
+}
+
+.k9 {
+  width: 66px;
+  border-right-width: 10px;
+}
+
+.k8 {
+  width: 66px;
+  border-left-width: 10px;
+}
+
+.k17 {
+  width: 87px;
+  border-right-width: 10px;
+}
+
+.k13 {
+  width: 103px;
+  border-left-width: 10px;
+}
+
+.k16.left {
+  width: 113px;
+  border-right-width: 10px;
+}
+
+.k16.right {
+  width: 77px;
+  border-left-width: 10px;
+}
+
+.k91, .k93 {
+  width: 72px;
+}
+.k91 .top, .k93 .top {
+  font-size: 13px;
+}
+.k91 .bottom, .k93 .bottom {
+  font-size: 20px;
+}
+
+.k91.left {
+  border-right-width: 10px;
+}
+
+.k93.right {
+  border-left-width: 10px;
+}
+
+.k32 {
+  width: 328px;
+  border-width: 3px 8px 10px;
+}
+.k32 .keycap {
+  width: 321px;
+}
+.k32.pressed {
+  -webkit-transform: scale(0.98, 0.95);
+  -moz-transform: scale(0.98, 0.95);
+  -ms-transform: scale(0.98, 0.95);
+  -o-transform: scale(0.98, 0.95);
+  transform: scale(0.98, 0.95);
+}
