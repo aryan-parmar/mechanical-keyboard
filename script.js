@@ -6,13 +6,13 @@ $(window).on({
   'keydown': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.addClass('pressed');
-    audio.src = '/mechanical-keyboard/start2.mp3'
+    audio.src = '/mechanical-keyboard/start.mp3'
     audio.play();
   },
   'keyup': function (e) {
     var pressedKey = $('.k' + e.keyCode);
     pressedKey.removeClass('pressed');
-    audio1.src = '/mechanical-keyboard/end2.mp3';
+    audio1.src = '/mechanical-keyboard/end.mp3';
     audio1.play();
   }
 });
